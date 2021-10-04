@@ -1,5 +1,6 @@
 # A.L.I.C.E
-Uma inteligência artificial básica baseada no(a) App/IA SimiSimi.
+
+> **Uma inteligência artificial básica baseada no(a) App/IA SimiSimi.**
 
 ```
 apt-get update && apt-get upgrade -y
