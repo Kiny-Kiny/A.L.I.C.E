@@ -5,13 +5,16 @@ system('git pull')
 # Simples I.A feita utilizando Python.#
 #######################################
 __Author__ : 'Kiny'
+
 if path.exists('BotDialog') == True:
 			
 			with open('BotDialog','rb') as c:
 				
 				Dialog = load(c)
 else:
+		
 		class dialog:
+			
 			def __init__(self, perguntasOuFalas,respostas):
 				
 				self.perguntasOuFalas = perguntasOuFalas
@@ -64,4 +67,5 @@ def main():
 	system('cls||clear');print('Alice : Espero ver você em breve! :)')
 
 if __name__ == '__main__':
+	
 	main()
