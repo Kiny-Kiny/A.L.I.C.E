@@ -5,21 +5,20 @@ system('git pull')
 # Simples I.A feita utilizando Python.#
 #######################################
 __Author__ : 'Kiny'
-try:
-	if path.exists('BotDialog') == True:
-		
-		with open('BotDialog','rb') as c:
+if path.exists('BotDialog') == True:
 			
-			Dialog = load(c)
-except:
-	
-	class Dialog:
-		def __init__(self, perguntasOuFalas,respostas):
-			self.perguntasOuFalas=perguntasOuFalas
+			with open('BotDialog','rb') as c:
+				
+				Dialog = load(c)
+else:
+		class dialog:
+			def __init__(self, perguntasOuFalas,respostas):
+				
+				self.perguntasOuFalas = perguntasOuFalas
 			
-			self.respostas = respostas
-
-	Dialog=Dialog(['Olá!', 'Tudo bem?'],['Olá! :D', 'Sim! E com você?'])
+				self.respostas = respostas
+				
+		Dialog=dialog(['Olá!', 'Tudo bem?'],['Olá! :D', 'Sim! E com você?'])
 	
 def save(arch):
 	try:
@@ -42,7 +41,7 @@ def conversa(op):
 		
 		Dialog.respostas.append(perg)
 		
-#		save(Dialog)
+		save(Dialog)
 			
 	else:
 		
